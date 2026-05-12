@@ -1,48 +1,49 @@
-Analysis of Economic Instability in Pakistan (1990–2023)
-📌 Project Overview
-This project provides a comprehensive analysis of Pakistan's economic landscape over the last three decades. By utilizing Random Forest Machine Learning models and Time-Series Cross-Validation, the analysis identifies the primary drivers of GDP growth and economic instability.
+# 📈 Pakistan Economic Instability: Machine Learning Insights (1990-2023)
 
-The project transitions from raw data cleaning to advanced statistical EDA, culminating in a predictive model that evaluates the impact of variables like Inflation, Debt-to-GDP, and Political Stability.
+A data-driven analysis of Pakistan's economy using Random Forest Regression to identify the core drivers of GDP growth and stability.
 
-🚀 Key Features
-Time-Series Modeling: Uses TimeSeriesSplit to respect the chronological order of economic data.
+---
 
-Predictive Analytics: Implements a Random Forest Regressor to forecast GDP growth.
+## 📊 Economic Insights Dashboard
+![Economic Dashboard](dashboard.png)
 
-Feature Importance: Quantifies which economic indicators (e.g., Exchange Rate, CPI) most heavily influence the national economy.
+### **Dashboard Highlights:**
+* **Top 12 Feature Importance:** Identifies which variables (like Political Stability and Debt) have the highest mathematical impact on GDP growth.
+* **Actual vs. Predicted GDP:** A comparison showing how well our Machine Learning model tracks real-world economic shifts.
+* **Cumulative Contribution:** Visualizes how different sectors build up to the total economic output.
+* **Forecast Scenarios:** Data-backed projections for future economic trajectories.
 
-Economic Roadmap: Includes a data-driven 3-phase recommendation report for economic recovery.
+---
 
-📊 Visualizations Included
-The analysis generates several critical graphs:
+## 🔍 Project Overview
+This project analyzes over **400 months** of economic data (1990–2023) to understand the structural causes of instability in Pakistan. By using a **Random Forest Regressor** with **Time-Series Cross-Validation**, we move beyond simple correlations to find predictive patterns.
 
-Top 12 Feature Importance: A bar chart showing what truly drives GDP growth.
+### **Key Objectives:**
+1.  **Analyze** the historical relationship between Inflation (CPI), Debt, and the PKR/USD Exchange Rate.
+2.  **Train** an AI model to predict GDP growth based on monthly indicators.
+3.  **Identify** "Crisis Zones" where economic metrics deviated significantly from stable trends.
 
-Correlation Heatmaps: Visualizing the relationship between Debt, Inflation, and Currency value.
+---
 
-Actual vs. Predicted GDP: A time-series comparison showing model accuracy.
+## 🛠️ Technical Stack
+* **Data Processing:** `Pandas`, `NumPy`
+* **Machine Learning:** `Scikit-Learn` (Random Forest, TimeSeriesSplit)
+* **Visualization:** `Matplotlib`, `Seaborn`
+* **Preprocessing:** `MinMaxScaler` and custom cleaning for time-series alignment.
 
-Economic Crisis Detection: Identification of negative growth periods.
+---
 
-🛠️ Technology Stack
-Language: Python
+## 📂 Repository Structure
+* `pakistan_economical_analysis.ipynb`: The complete analysis, from cleaning to ML modeling.
+* `pakistan_clean.csv`: The cleaned dataset used for this project.
+* `dashboard.png`: The visual results displayed above.
 
-Data Analysis: Pandas, NumPy
+---
 
-Machine Learning: Scikit-Learn (Random Forest, TimeSeriesSplit)
+## 💡 Strategic Recommendations
+Based on the model's feature importance ranking, the analysis concludes with a three-phase recovery roadmap:
+* **Phase 1 (Immediate):** Stabilize the PKR and curb CPI inflation to restore consumer confidence.
+* **Phase 2 (Medium-term):** Broaden the tax base and implement export-oriented structural reforms.
+* **Phase 3 (Long-term):** Focus on political stability and modernizing the banking sector to sustain growth above 5.5%.
 
-Visualization: Matplotlib, Seaborn
-
-📂 Dataset
-The analysis is based on pakistan_clean.csv, which contains monthly observations from June 1990 to December 2023 (403 months).
-
-Target Variable: GDP_Growth
-
-Key Features: Inflation_CPI, Debt_to_GDP, Exchange_Rate_PKR/USD, Political_Stability_Index.
-
-📈 Summary of Insights
-Primary Volatility Drivers: The model suggests that Political Stability and Exchange Rate fluctuations are the strongest predictors of economic shifts.
-
-Phase 1 Recommendation: Focus on Immediate Stabilization (Inflation control and PKR support).
-
-Phase 2 Recommendation: Structural Reforms (Tax broadening and export initiatives)
+---
